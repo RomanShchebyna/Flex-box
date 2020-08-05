@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+ 
+}
+[class*="square"]{
+    width:100px;
+    height: 100px;
+    background-color: cadetblue;
+    border-radius: 10%;
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+}
+.circle{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color:blue;
+    margin: 3px;
+}
+/* 1 */
+.first-square{
+    justify-content: center;
+    align-items: center;
+}
+/* 2 */
+.second-square{
+justify-content: space-between;
+}
+.second-square .circle:last-child{
+    align-self: flex-end;
+}
+/* 3 */
+.third-square{
+    justify-content: space-between;
+}
+
+
+.third-square .circle:last-child {
+     align-self: flex-end; 
+   
+}
+
+.third-square .circle:nth-child(2) {
+
+    align-self: center;
+}
+
+/* 4 */
+.fourth-square {
+    
+    justify-content: space-between;
+   
+
+}
+
+.fourth-square .column {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* 5 */
+.fifth-square {
+    justify-content: space-between;
+}
+
+.fifth-square .column{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.fifth-square .column:nth-child(2){
+ 
+    align-self: center;
+}
+
+/* 6 */
+.sixth-square{
+   justify-content: space-between;
+
+}
+.sixth-square .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+/* 6 */
+/*  */
